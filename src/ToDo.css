@@ -1,0 +1,12 @@
+.ToDo li {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+
+.ToDo input {
+  margin: 0 10px 0;
+}
+
+.ToDo button {
+  margin-top: 10px;
+}

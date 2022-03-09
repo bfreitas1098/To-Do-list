@@ -1,3 +1,7 @@
+import ToDo from "./ToDo";
+import AddTasks from "./AddTasks";
+import FilterButtons from "./FilterButtons";
+
 import "./App.css";
 
 function App() {
@@ -7,42 +11,15 @@ function App() {
       <blockquote>
         <p>"Action is the foundational key to all success." - Pablo Picasso</p>
       </blockquote>
-      <form>
-        <input type="text" autoComplete="off" autoFocus="on" />
-        <input type="submit" value="Add" />
-      </form>
+      <AddTasks />
       <br />
-      <span>
-        <button>Show All Tasks</button>
-        <button>Show Active Tasks</button>
-        <button>Show Completed Tasks</button>
-      </span>
+      <FilterButtons />
       <h3>4 Tasks Remaining</h3>
       <ul>
-        <li>
-          <span>
-            <input type="checkbox" />
-            Take out trash
-          </span>
-        </li>
-        <li>
-          <span>
-            <input type="checkbox" />
-            Walk dog
-          </span>
-        </li>
-        <li>
-          <span>
-            <input type="checkbox" />
-            Put away laundry
-          </span>
-        </li>
-        <li>
-          <span>
-            <input type="checkbox" />
-            Finish homework
-          </span>
-        </li>
+        <ToDo task="Take out trash" />
+        <ToDo task="Walk dog" />
+        <ToDo task="Do laundry" />
+        <ToDo task="Finish homework" />
       </ul>
     </div>
   );
